@@ -12,39 +12,25 @@
  limitations under the License.
 -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <parent>
         <groupId>org.wso2.carbon.tomcat.samlsso.extension</groupId>
-        <artifactId>samples</artifactId>
+        <artifactId>tomcat-samlsso</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
+
+
     <modelVersion>4.0.0</modelVersion>
+    <artifactId>modules</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Tomcat - Extension</name>
+    <description>Web application security functions</description>
+    <url>http://wso2.com</url>
 
-    <artifactId>sso-quickstart</artifactId>
-    <packaging>jar</packaging>
-    <name>WSO2 Application Server - SSO Quickstart</name>
+    <modules>
+        <module>samlsso</module>
+    </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-juli</artifactId>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <mainClass>org.wso2.appserver.samples.sso.Quickstart</mainClass>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
