@@ -16,26 +16,6 @@
     <xs:element name="AppServer">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="ClassLoader">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Environments">
-                                <xs:complexType>
-                                    <xs:sequence>
-                                        <xs:element name="Environment" minOccurs="1" maxOccurs="unbounded">
-                                            <xs:complexType>
-                                                <xs:sequence>
-                                                    <xs:element name="Name" type="xs:string" maxOccurs="1"/>
-                                                    <xs:element name="Classpath" type="xs:string" maxOccurs="1"/>
-                                                </xs:sequence>
-                                            </xs:complexType>
-                                        </xs:element>
-                                    </xs:sequence>
-                                </xs:complexType>
-                            </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
                 <xs:element name="SAML2SingleSignOn" minOccurs="0" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence>
@@ -54,18 +34,6 @@
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="StatisticsPublisher" minOccurs="0" maxOccurs="1">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="Username" type="xs:string"/>
-                            <xs:element name="Password" type="xs:string"/>
-                            <xs:element name="DataAgentType" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                            <xs:element name="AuthenticationURL" type="xs:anyURI"/>
-                            <xs:element name="PublisherURL" type="xs:anyURI"/>
-                            <xs:element name="StreamId" type="xs:string"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
