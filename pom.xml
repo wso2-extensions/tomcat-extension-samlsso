@@ -278,7 +278,7 @@
         <testng.version>6.9.10</testng.version>
         <slf4j.version>1.7.21</slf4j.version>
         <gson.version>2.7</gson.version>
-        <appserver.utility.version>1.0.0</appserver.utility.version>
+        <appserver.utility.version>1.0.1</appserver.utility.version>
         <org.cryptacular.version>1.1.0</org.cryptacular.version>
 
         <shibboleth.java.support.shade.version>7.2.0.wso2v1</shibboleth.java.support.shade.version>
