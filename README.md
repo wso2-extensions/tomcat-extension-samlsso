@@ -19,11 +19,11 @@ Tomcat 8 will be used to deploy web applications and WSO2 IS will be used as the
 
 Checkout the project using below command
 
-    `git clone https://github.com/wso2-extensions/tomcat-extension-samlsso.git`
+    git clone https://github.com/wso2-extensions/tomcat-extension-samlsso.git
 
 Build it using maven
 
-    `maven clean install`
+    maven clean install
 
 ## Step 3: Add the necessary configurations and libraries. ##
 
@@ -62,17 +62,18 @@ Build it using maven
  ![alt tag](https://docs.wso2.com/download/attachments/51492203/Screen%20Shot%202016-08-04%20at%202.45.55%20PM.png?version=1&modificationDate=1470302231000&api=v2)
  
  in the above screen: 
-    a) Enter bookstore-app in the Issuer ID field.
-    b) Enter https://localhost:8443/bookstore-app/acs in the Assertion Consumer URLs field and click Add.
-    c) Select wso2carbon for the Certificate Alias field.
-    d) Select the Enable Response Signing, Enable Signature Validation in Authentication Requests and Logout Requests and Enable Single Logout check boxes.
+  ..a) Enter bookstore-app in the Issuer ID field.
+  ..b) Enter https://localhost:8443/bookstore-app/acs in the Assertion Consumer URLs field and click Add.
+  ..c) Select wso2carbon for the Certificate Alias field.
+  ..d) Select the Enable Response Signing, Enable Signature Validation in Authentication Requests and Logout Requests and Enable Single Logout check boxes.
  
  7. Click Update to finish registering the service provider.
  8. Repeat the above steps to register a service provider for the musicstore-app application. Use the following values:
-    a) The service provider name should be musicstore-app.
-    b) The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
+  ..a) The service provider name should be musicstore-app.
+  ..b) The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
  
  ## Step 5 ##
+ See How samples works
  
  1. Start the WSO2 Application Server.
  2. Now you are ready to try out the Application Server SAML 2.0 based Single-Sign-On Valve.
