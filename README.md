@@ -27,7 +27,7 @@ Build it using maven
 
 ## Step 3: Add the necessary configurations and libraries. ##
 
- 1. Open the server.xml file (stored in the <Tomcat_HOME&gt;/conf directory).
+ 1. Open the server.xml file (stored in the &lt;Tomcat_HOME&gt;/conf directory).
  2. Add the following under the server tag:
     `<Listener className="org.wso2.appserver.configuration.listeners.ServerConfigurationLoader"/>`
  3. Add the following under the Service tag: 
