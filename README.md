@@ -1,4 +1,4 @@
-# Tomcat Extension for SAML SSO
+# Tomcat Extension for SAML SSO #
 
 Single Sign-On or SSO is a popular way of managing a log-in session throughout several applications or programs. 
 It allows users to access multiple applications through a single log-in session, without having to enter credentials multiple times. 
@@ -8,13 +8,14 @@ Follow the below steps to see how this extension works
 
 We will use two web applications named 'bookstore' and 'musicstore' with WSO2 Identity server.
 
-Step 1: Download and install Tomcat 8 and WSO2 IS. 
+## Step 1: Download and install Tomcat 8 and WSO2 IS. ## 
 
 Tomcat 8 will be used to deploy web applications and WSO2 IS will be used as the identity provider that enables SSO and SLO.
-Download Tomcat 8 and extract the zip file to your computer. The extracted directory will be your <Tomcat_HOME> directory.
-Download WSO2 IS and extract the zip file to your computer. The extracted directory will be your <IS_HOME> directory.
 
-Step 2: Checkout the project and build it.
+ 1. Download Tomcat 8 and extract the zip file to your computer. The extracted directory will be your <Tomcat_HOME> directory.
+ 2. Download WSO2 IS and extract the zip file to your computer. The extracted directory will be your <IS_HOME> directory.
+
+## Step 2: Checkout the project and build it. ##
 
 Checkout the project using below command
 
@@ -24,7 +25,7 @@ Build it using maven
 
 maven clean install
 
-Step 3: Add the necessary configurations and libraries.
+## Step 3: Add the necessary configurations and libraries. ##
 
  1. Open the server.xml file (stored in the <Tomcat_HOME>/conf directory).
  2. Add the following under the server tag:
@@ -42,7 +43,7 @@ Step 3: Add the necessary configurations and libraries.
  9. Copy <project_root>/samples/sso-sample-apps/bookstore-app/target/bookstore-app.war and 
     <project_root>/samples/sso-sample-apps/musicstore-app/target/musicstore-app.war to <Tomcat_HOME>/webapps folder.
     
-Step 4: Register web applications on WSO2 Identity Server.
+## Step 4: Register web applications on WSO2 Identity Server. ##
  Here WSO2 Identity Server will act as the identity provider for service providers. We have to register web apps as service providers
  to give them the single sign on capability. Follow the below steps to register bookstore app and musicstore app as service providers.
  
@@ -71,7 +72,7 @@ Step 4: Register web applications on WSO2 Identity Server.
  a) The service provider name should be musicstore-app.
  b) The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
  
- Step 5: 
+ ## Step 5: ## 
  1. Start the WSO2 Application Server.
  2. Now you are ready to try out the Application Server SAML 2.0 based Single-Sign-On Valve.
     * Try accessing http://localhost:8080/musicstore-app web application. You will be redirected to the Identity Server login page. 
