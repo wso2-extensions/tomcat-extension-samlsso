@@ -8,7 +8,7 @@ Follow the below steps to see how this extension works
 
 We will use two web applications named 'bookstore' and 'musicstore' with WSO2 Identity server.
 
-## Step 1: Download and install Tomcat 8 and WSO2 IS. ## 
+## Step 1: Download and install Tomcat 8 and WSO2 IS. ##
 
 Tomcat 8 will be used to deploy web applications and WSO2 IS will be used as the identity provider that enables SSO and SLO.
 
@@ -19,11 +19,11 @@ Tomcat 8 will be used to deploy web applications and WSO2 IS will be used as the
 
 Checkout the project using below command
 
-git clone https://github.com/wso2-extensions/tomcat-extension-samlsso.git
+    `git clone https://github.com/wso2-extensions/tomcat-extension-samlsso.git`
 
 Build it using maven
 
-maven clean install
+    `maven clean install`
 
 ## Step 3: Add the necessary configurations and libraries. ##
 
