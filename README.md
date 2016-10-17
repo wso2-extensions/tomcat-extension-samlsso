@@ -63,16 +63,16 @@ Build it using maven
  
  in the above screen:
   
- a) Enter bookstore-app in the Issuer ID field.
- b) Enter https://localhost:8443/bookstore-app/acs in the Assertion Consumer URLs field and click Add.
- c) Select wso2carbon for the Certificate Alias field.
- d) Select the Enable Response Signing, Enable Signature Validation in Authentication Requests and Logout Requests and Enable Single Logout check boxes.
+ a). Enter bookstore-app in the Issuer ID field.
+ b). Enter https://localhost:8443/bookstore-app/acs in the Assertion Consumer URLs field and click Add.
+ c). Select wso2carbon for the Certificate Alias field.
+ d). Select the Enable Response Signing, Enable Signature Validation in Authentication Requests and Logout Requests and Enable Single Logout check boxes.
  
  7. Click Update to finish registering the service provider.
  8. Repeat the above steps to register a service provider for the musicstore-app application. Use the following values:
  
- a) The service provider name should be musicstore-app.
- b) The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
+ a). The service provider name should be musicstore-app.
+ b). The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
 
  ## Step 5 ##
  
