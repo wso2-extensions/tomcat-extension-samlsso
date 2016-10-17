@@ -13,7 +13,7 @@ We will use two web applications named 'bookstore' and 'musicstore' with WSO2 Id
 Tomcat 8 will be used to deploy web applications and WSO2 IS will be used as the identity provider that enables SSO and SLO.
 
  1. Download Tomcat 8 and extract the zip file to your computer. The extracted directory will be your &lt;Tomcat_HOME&gt; directory.
- 2. Download WSO2 IS and extract the zip file to your computer. The extracted directory will be your <IS_HOME> directory.
+ 2. Download WSO2 IS and extract the zip file to your computer. The extracted directory will be your &lt;IS_HOME&gt; directory.
 
 ## Step 2: Checkout the project and build it. ##
 
@@ -27,21 +27,21 @@ maven clean install
 
 ## Step 3: Add the necessary configurations and libraries. ##
 
- 1. Open the server.xml file (stored in the <Tomcat_HOME>/conf directory).
+ 1. Open the server.xml file (stored in the <Tomcat_HOME&gt;/conf directory).
  2. Add the following under the server tag:
-    <Listener className="org.wso2.appserver.configuration.listeners.ServerConfigurationLoader"/>
+    `<Listener className="org.wso2.appserver.configuration.listeners.ServerConfigurationLoader"/>`
  3. Add the following under the Service tag: 
-    <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"  maxThreads="150" SSLEnabled="true" scheme="https" 
-    secure="true" clientAuth="false" sslProtocol="TLS" keystoreFile="conf/wso2/wso2carbon.jks"  keystorePass="wso2carbon"/>
+    `<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"  maxThreads="150" SSLEnabled="true" scheme="https" 
+    secure="true" clientAuth="false" sslProtocol="TLS" keystoreFile="conf/wso2/wso2carbon.jks"  keystorePass="wso2carbon"/>`
  4. Add the following under the localhost container: 
-    <Valve className="org.wso2.appserver.webapp.security.saml.SAML2SSOValve"/>
- 5. Build the project and copy the <project_root>/modules/samlsso/target/samlsso-1.0.0-SNAPSHOT-fat.jar to <Tomcat_HOME>/lib
- 6. Open the context.xml file (stored in the <Tomcat_HOME>/conf directory).
+    `<Valve className="org.wso2.appserver.webapp.security.saml.SAML2SSOValve"/>`
+ 5. Build the project and copy the &lt;project_root&gt;/modules/samlsso/target/samlsso-1.0.0-SNAPSHOT-fat.jar to &lt;Tomcat_HOME&gt;/lib
+ 6. Open the context.xml file (stored in the &lt;Tomcat_HOME&gt;/conf directory).
  7. Add the following under the Context tag:
-    <Listener className="org.wso2.appserver.configuration.listeners.ContextConfigurationLoader"/>
- 8. Copy <project_root>/modules/samlsso/src/main/Resources/wso2 folder to <Tomcat_HOME>/conf
- 9. Copy <project_root>/samples/sso-sample-apps/bookstore-app/target/bookstore-app.war and 
-    <project_root>/samples/sso-sample-apps/musicstore-app/target/musicstore-app.war to <Tomcat_HOME>/webapps folder.
+    `<Listener className="org.wso2.appserver.configuration.listeners.ContextConfigurationLoader"/>`
+ 8. Copy &lt;project_root&gt;/modules/samlsso/src/main/Resources/wso2 folder to &lt;Tomcat_HOME&gt;/conf
+ 9. Copy &lt;project_root&gt;/samples/sso-sample-apps/bookstore-app/target/bookstore-app.war and 
+    &lt;project_root&gt;/samples/sso-sample-apps/musicstore-app/target/musicstore-app.war to &lt;Tomcat_HOME&gt;/webapps folder.
     
 ## Step 4: Register web applications on WSO2 Identity Server. ##
  Here WSO2 Identity Server will act as the identity provider for service providers. We have to register web apps as service providers
@@ -73,6 +73,7 @@ maven clean install
  b) The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
  
  ## Step 5: ## 
+ 
  1. Start the WSO2 Application Server.
  2. Now you are ready to try out the Application Server SAML 2.0 based Single-Sign-On Valve.
     * Try accessing http://localhost:8080/musicstore-app web application. You will be redirected to the Identity Server login page. 
