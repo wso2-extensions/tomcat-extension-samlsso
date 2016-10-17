@@ -16,13 +16,6 @@
     <xs:element name="wso2as-web">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="class-loader" minOccurs="0" maxOccurs="1">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="environments" type="xs:string" minOccurs="0" maxOccurs="1"/>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
                 <xs:element name="saml2-single-sign-on" minOccurs="0" maxOccurs="1">
                     <xs:complexType>
                         <xs:sequence>
@@ -73,14 +66,6 @@
                                     </xs:simpleContent>
                                 </xs:complexType>
                             </xs:element>
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
-                <xs:element name="statistics-publisher" minOccurs="0" maxOccurs="1">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="enable-stats-publisher" type="xs:boolean"/>
-                            <xs:element name="publisher-implementation" type="xs:string"/>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
