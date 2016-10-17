@@ -61,16 +61,18 @@ Build it using maven
  6. You can now start specifying the SSO related configurations for the service provider.
  ![alt tag](https://docs.wso2.com/download/attachments/51492203/Screen%20Shot%202016-08-04%20at%202.45.55%20PM.png?version=1&modificationDate=1470302231000&api=v2)
  
- in the above screen: 
-....a) Enter bookstore-app in the Issuer ID field.
-....b) Enter https://localhost:8443/bookstore-app/acs in the Assertion Consumer URLs field and click Add.
-....c) Select wso2carbon for the Certificate Alias field.
-....d) Select the Enable Response Signing, Enable Signature Validation in Authentication Requests and Logout Requests and Enable Single Logout check boxes.
+ in the above screen:
+  
+ a) Enter bookstore-app in the Issuer ID field.
+ b) Enter https://localhost:8443/bookstore-app/acs in the Assertion Consumer URLs field and click Add.
+ c) Select wso2carbon for the Certificate Alias field.
+ d) Select the Enable Response Signing, Enable Signature Validation in Authentication Requests and Logout Requests and Enable Single Logout check boxes.
  
  7. Click Update to finish registering the service provider.
  8. Repeat the above steps to register a service provider for the musicstore-app application. Use the following values:
-....a) The service provider name should be musicstore-app.
-....b) The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
+ 
+ a) The service provider name should be musicstore-app.
+ b) The default assertion consumer url should be https://localhost:8443/musicstore-app/acs.
 
  ## Step 5 ##
  
