@@ -16,13 +16,13 @@
     <parent>
         <groupId>org.wso2.carbon.tomcat.samlsso.extension</groupId>
         <artifactId>tomcat-samlsso</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.1-SNAPSHOT</version>
     </parent>
 
 
     <modelVersion>4.0.0</modelVersion>
     <artifactId>modules</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Tomcat - Extension</name>
     <description>Web application security functions</description>
